@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/552610a3f9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="new_task">
-        <input type="text" placeholder="Task to be done.." />
-        <button id="push">Add</button>
-      </div>
-      <div class="tasks"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game-Themed To-Do List</title>
+  <script src="https://kit.fontawesome.com/552610a3f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Master</h1>
+    <div id="new_task">
+      <input type="text" placeholder="Enter your task..." id="task_input">
+      <input type="time" id="task_time">
+      <button id="push">Add Task</button>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div class="tasks"></div>
+  </div>
+  <audio id="sound-add" src="/assets/add-sound.mp3"></audio>
+  <audio id="sound-complete" src="/assets/complete-sound.mp3"></audio>
+  <audio id="sound-delete" src="/assets/delete-sound.mp3"></audio>
+  <script src="script.js"></script>
+</body>
 </html>
